@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --label-icon: url("/img/lua.png");
+    --escudo-img: url("/img/corinthians-branco.png"); 
+  }
+  
+  .dark-mode {
+    --bg-cor: black;
+    --fonte-cor: #ffffff;
+    --label-icon: url("/img/sol.png");
+    --escudo-img: url("/img/corinthians-preto.png");
+  }
+  
+  body {
+    background: var(--bg-cor);
+    color: var(--fonte-cor);
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    user-select: none; 
+    transition: 0.5s;
+    user-select: none;
+  }
+  
+  .container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mudar-tema {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    background-image: var(--label-icon); 
+    background-repeat: no-repeat;
+    padding: 67px;
+    cursor: pointer; 
+  }
+  
+  #btn {
+    display: none;
+  }
+  
+  .escudo {
+    background-image: var(--escudo-img);
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 350px;
+    margin-bottom: -80px;
+    position: relative;
+    left: 10%;
+  }
+  
